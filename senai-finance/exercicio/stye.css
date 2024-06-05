@@ -1,0 +1,10 @@
+*{
+box-sizing: 0;
+margin: 0;
+}
+
+body{
+background-image: url(tablet1.png);
+background-repeat: no-repeat;
+background-size: 800px;
+}
