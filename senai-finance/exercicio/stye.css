@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Sedan+SC&family=Seymour+One&display=swap');
 *{
-box-sizing: 0;
 margin: 0;
 }
 :root{
@@ -123,4 +122,9 @@ text-align: center;
 
 .tudo1 {
 padding: 150px;
+}
+
+p {
+font-weight: bolder;
+height: 0;
 }
