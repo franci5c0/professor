@@ -4,17 +4,21 @@
 margin: 0;
 }
 :root{
---branco: #FFFFFF;
+--white: #FFFFFF;
 --midnightblue: #191970;
 --lightseagreen: #20B2AA;
 --teal: #008080;
---preto: #000;
+--black: #000;
+--steelblue: #4682B4;
+--aqua: #00FFFF;
+--blue: #0000FF;
+--cornflowerblue: #6495ED;
 }
 
 body{
-background-image: url(tabletazul.png);
+background-image: url(tabletrealista.png);
 background-repeat: no-repeat;
-background-size: 800px;
+background-size: 900px;
 background-position: center;
 background-position-y: 50px ;
 }
@@ -32,6 +36,7 @@ margin: 30px;
  flex-direction: column;
  align-items: center;
  row-gap: 40px;
+ margin: 0;
 }
 
 h1 {
@@ -52,17 +57,19 @@ font-family: "Sedan SC", cursive;
 }
 
 .botao {
-background-color: var(--teal);
-color: var(--branco);
+background-color: var(--cornflowerblue);
+color: var(--white);
 width: 200px;
 height: 40px;
 cursor: pointer;
-border: outset 5px var(--lightseagreen);
-box-shadow: 3px 2px 4px 3px var(--preto);
+border: outset 5px var(--cornflowerblue);
+box-shadow: 3px 2px 4px 3px var(--black);
 transition: 0.5s ease;
 animation: pulse 2s infinite;
 }
 
+
+/*
 @keyframes pulse{
 0% {
 transform: scale(1);
@@ -77,13 +84,14 @@ transform: scale(1.3);
 .botao:hover{
 animation: none;
 }
+*/
 
 a {
 font-size: 20px;
 font-family: "Sedan SC", cursive;
-color: var(--branco);
+color: var(--white);
+text-decoration: none;
 }
-
 
 /*LOGIN*/
 .geral-label{
@@ -107,14 +115,15 @@ font-weight:bolder
 .caixa {
 height: 30px;
 font-size: 15px;
-border: outset 3px var(--lightseagreen);
+border: outset 3px var(--steelblue);
 font-family: "Sedan SC", cursive;
-box-shadow: 2px 1px 2px 3px var(--preto);
+box-shadow: 2px 1px 2px 3px var(--black);
+width: 300px;
 }
 
 .link {
 font-size: 15px;
-color: var(--preto);
+color: var(--black);
 font-weight: bolder;
 text-align: center;
 }
@@ -126,4 +135,38 @@ padding: 150px;
 p {
 font-weight: bolder;
 height: 0;
+}
+
+/*REGISTRO*/
+.titulo {
+font-size: 30px;
+height: 20px;
+margin: 10px;
+margin-right: 350px;
+text-shadow: 2px 2px 4px ;
+}
+
+/*SOBRE*/
+.sobresenai{
+font-family: "Seymour One", cursive;
+font-size: 23px;
+word-break: break-all;
+width: 400px;
+margin: auto;
+}
+
+.div-botao{
+display: flex;
+justify-content: center;
+}
+
+.divisao-botao{
+margin: 300px;
+}
+
+/*HOVER*/
+.botao:hover{
+transition: all;
+transform: scale(1.2);
+/*transform:translate(100px, 100px);*//*desloca de lugar*/
 }
