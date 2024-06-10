@@ -119,6 +119,7 @@ border: outset 3px var(--steelblue);
 font-family: "Sedan SC", cursive;
 box-shadow: 2px 1px 2px 3px var(--black);
 width: 300px;
+border-radius: 8px;
 }
 
 .link {
@@ -135,6 +136,7 @@ padding: 150px;
 p {
 font-weight: bolder;
 height: 0;
+font-size: 21px;
 }
 
 /*REGISTRO*/
